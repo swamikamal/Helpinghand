@@ -1,0 +1,198 @@
+ul{
+    padding-inline-start: 0px;
+}
+body{
+    position: relative;
+    min-width: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.sidebar{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background: #11101d;
+    height: 100%;
+    width: 240px;
+    padding: 6px 14px;
+
+}
+.sidebar.active{
+    width: 240px;
+}
+.sidebar .logo_content .logo{
+    color: aliceblue;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items:center;
+
+
+}
+.sidebar .nav_list ul .tooltip{
+    position: absolute;
+    height: 35px;
+    width: 122px;
+    left: 180px;
+    color: aliceblue;
+    background-color: #11101d;
+    line-height: 35px;
+    text-align: center;
+    top:0;
+    transform: translateY(-50%);
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(160, 11, 11, 0.144);
+    transition:0s;
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar .nav_list ul:hover .tooltip{
+    top:54%;
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+.sidebar .logo_content .logo .logoname{
+    margin-top: 2px;
+    margin-left: 6px;
+    font-size: 30;
+    font-weight: 400;
+    padding-top: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sidebar .logo_content  .slog{
+    color: aliceblue;
+    margin-left: 53.7px;
+    align-items: center;
+    font-size: 15;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.sidebar .logo_content #btn{
+    position: fixed;
+    left: 220;
+    top:6px;
+    font-size: 30;
+    color: aliceblue;
+
+}
+.sidebar .nav_list ul{
+    margin-top: 10px;
+    margin-left:none ;
+    text-align: center;
+    
+    position: relative;
+    list-style: none;
+    line-height: 20px;
+
+}
+
+.sidebar .nav_list ul a span{
+    font-size: 22px;
+}
+
+
+.sidebar .nav_list ul a{
+    color: aliceblue;
+    display: flex;
+    
+    align-items: center;
+    text-decoration: none;
+    transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) ease-in-out ;
+}
+.sidebar .nav_list ul a:hover{
+    color: chocolate;
+    margin-left: 20px;
+    background-position-x: left;
+    background-color: aqua;
+    border-radius: 5px;
+    
+}
+.sidebar .nav_list ul a i{
+    min-width: 50;
+    height: 50;
+    margin-left: 12px;
+    line-height: 3;
+    text-align: center;
+    
+}
+
+.sidebar .profile_content {
+    margin-top:22px;
+    width: 100%;
+    height: 150px;
+    background-color:rgba(160, 11, 11, 0.144);
+    border-radius: 20px;
+    
+}
+
+.sidebar .profile_content .profile .profile_details .profile_pic{
+    position: absolute;
+    align-content: center;
+    display: flex;
+    
+}
+.sidebar .profile_content .profile .profile_details .profile_pic #profilepicc{
+    width: 65px;
+    display: flex;
+    object-fit: cover;
+    border-radius: 50%;
+    padding:15px;
+    margin-left: none;
+    align-content: center;
+    align-items: center;
+    height: 65px;
+    align-items: center;
+    text-decoration: none;
+    transition: all cubic-bezier(0.1, 0.1, 0.1, 0.1) ease-in-out;
+}
+
+.sidebar .profile_content .profile .profile_details{
+    background-color:wheat;
+    margin-top: 150px;
+    padding-top: 12px;
+    border-radius: 20px;
+    
+}
+.sidebar .profile_content .profile .profile_details .itm{
+    color:rgba(23, 56, 202, 0.781);
+    position:relative;
+    align-content: center;
+    margin-left: 120px;
+    height: 60px;
+    
+    font-size: 19;
+    
+    
+}
+.sidebar .profile_content .profile .profile_details .itm .rank{
+    margin-left: 22px;
+    
+    
+}
+.sidebar .profile_content i{
+   
+    height: 40px;
+    border-radius: 10px;
+    margin-top: -5px;
+    width: 240px;
+    font-size: x-large;
+    text-align: center;
+    color:chocolate;
+    padding-left:0px;
+    padding-top: 8px;
+    padding-bottom: -4px;
+    
+    background-color:white;
+}
+.home_content{
+    position: absolute;
+    height: 100%;
+    width: calc(100%-260px);
+    left:260;
+}
+.home_content .home_text{
+    font-size: 55px;
+    font-family:monospace;
+    font-weight: 600;
+    margin-left: 150px;
+}
